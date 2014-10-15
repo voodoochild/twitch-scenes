@@ -45,32 +45,16 @@
       width: 300px;
     }
     #usernames {
-    background: transparent;
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 100%);
     color: #333;
     font-size: 1.8em;
     list-style: none;
-    padding: .25em 0;
+    padding: .5em;
     position: absolute;
     bottom: 20px;
-    left: 20px;
-    right: 20px;
-    text-align: center;
-  }
-  #usernames::before, #usernames::after {
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    width: 51%;
-  }
-  #usernames::before {
-    background: -webkit-linear-gradient(right, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-    left: 0;
-  }
-  #usernames::after {
-    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
-    right: 0;
+    left: 25px;
+    right: 25px;
+    /*text-align: center;*/
   }
   #usernames li {
     display: inline-block;
