@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+  <title>1 | Twitch scenes</title>
+  <style>
+    body {
+      background-color: #000;
+      background-image: url(https://d3b4yo2b5lbfy.cloudfront.net/wp-content/uploads/wallpapers/DragonBash-1920x1080.jpg);
+      background-repeat: no-repeat;
+      color: #fff;
+      font-family: droid sans, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    main {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
+    .fa {
+      color: #dd1f3e;
+      font-size: .75em;
+    }
+    #stream, #webcam {
+      background: #fff;
+      border: 5px solid #dd1f3e;
+      border-radius: 5px;
+      position: absolute;
+      top: 20px;
+    }
+    #stream {
+      border-color: #333;
+      left: 20px;
+      height: 720px;
+      width: 1280px;
+    }
+    #webcam {
+      height: 200px;
+      right: 20px;
+      width: 300px;
+    }
+    #usernames {
+    background: transparent;
+    color: #333;
+    font-size: 1.8em;
+    list-style: none;
+    padding: .25em 0;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    text-align: center;
+  }
+  #usernames::before, #usernames::after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 51%;
+  }
+  #usernames::before {
+    background: -webkit-linear-gradient(right, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    left: 0;
+  }
+  #usernames::after {
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 50%, rgba(255,255,255,0) 100%);
+    right: 0;
+  }
+  #usernames li {
+    display: inline-block;
+    margin-left: 2em;
+    position: relative;
+    z-index: 2;
+  }
+  #usernames li:first-child {
+    margin-left: 0;
+  }
+</style>
+</head>
+<body>
+  <main>
+    <div id="stream"></div>
+    <div id="webcam"></div>
+    <ul id="usernames">
+      <li><i class="fa fa-twitter"></i> blacklionchest</li>
+      <li><i class="fa fa-twitch"></i> blacklionchest</li>
+      <li><i class="fa fa-terminal  "></i> blacklionchest.co.uk</li>
+    </ul>
+  </main>
+</body>
+</html>
